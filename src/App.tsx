@@ -68,7 +68,7 @@ function App() {
 
   useEffect(() => {
 
-    /*let currentRecipes: any[] = []
+    let currentRecipes: any[] = []
     /// randomly generated starter recipes
     for (let i = 1; i <= 2 + Math.floor(Math.random() * 5); i++) {
       currentRecipes.push(<RecipeItem id={i}
@@ -82,20 +82,20 @@ function App() {
       />)
     }
     setRecipes(currentRecipes);
-    recipesRef.current = currentRecipes;*/
+    recipesRef.current = currentRecipes;
 
   }, [])
 
   const onSelectItem = (e: any) => {
     selectedRecipeRef.current = 
-    recipesRef.current.filter((recipe: any) => recipe.props.id == e.currentTarget.parentElement.id)[0].props
+    recipesRef.current.filter((recipe: any) => recipe.props.id == e.currentTarget.firstChild.textContent)[0].props
     console.log(selectedRecipeRef.current)
     setFormValues(selectedRecipeRef.current)
   }
 
   const onDeleteItem = (e: any) => {
     e.stopPropagation();
-    let id = e.currentTarget.parentElement.parentElement.id;
+    let id = e.currentTarget.parentElement.firstChild.textContent;
     recipesRef.current = recipesRef.current.filter((recipe: any) => recipe.props.id != id)
       .map((recipe: any) => recipe.props.id > id ? (
         { ...recipe, props: { ...recipe.props, id: recipe.props.id - 1 } }
@@ -116,7 +116,10 @@ function App() {
         <Row>
           <Col>
             <div className="content-list">
-              {recipes.length > 0 ? recipes : <>No recipes yet!</>}
+              {recipes.length > 0 ? 
+                <ul>{recipes}</ul> : 
+                
+                <>No recipes yet!</>}
             </div>
           </Col>
           <Col>
