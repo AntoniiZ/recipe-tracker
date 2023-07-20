@@ -1,46 +1,22 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# recipe-tracker project
 
-## Available Scripts
+React проект за добавяне, изтриване и редактиране на готварски рецепти. Изготвил : Антоний Златаров 41 гр. Фак. No: 121220083.
 
-In the project directory, you can run:
+---------------------------------------------
 
-### `npm start`
+Кратко демо :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![GifDemo](https://github.com/AntoniiZ/recipe-tracker/assets/43596889/2979de59-0711-41c6-91a2-cab6192427a0)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---------------------------------------------
 
-### `npm test`
+Резултати от локално пуснатите тестове :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![10](https://github.com/AntoniiZ/recipe-tracker/assets/43596889/32c67508-bf4d-4b17-9897-7d1905d50cc3)
+![11](https://github.com/AntoniiZ/recipe-tracker/assets/43596889/c122d88c-2981-4c84-a90f-a327d1ec2db4)
+![12](https://github.com/AntoniiZ/recipe-tracker/assets/43596889/310d9503-69c5-495c-abff-69b94d0a3045)
+![13](https://github.com/AntoniiZ/recipe-tracker/assets/43596889/78c9b5f3-12fd-4b8b-896e-c718ccea6caf)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
